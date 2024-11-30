@@ -11,6 +11,9 @@ import List_of_Objects from "./List_of_Objects.jsx";
 import ToDoList from "./To do list App/toDoList.jsx";
 import UseEffectComp from "./UseEffectComp.jsx";
 import DigitalClockApp from "./Digital Clock App/DigitalClockApp.jsx";
+import ComponentA from './UseContextApp/ComponentA';
+import UseRefComp from './UseRefComp.jsx';
+
 
 
 function App() {
@@ -56,6 +59,12 @@ function App() {
 
       <hr/><br/>
       <DigitalClockApp/>
+
+      <hr/><br/>
+      <ComponentA/>
+
+      <hr/><br/>
+      <UseRefComp/>
     </>
   );
 }

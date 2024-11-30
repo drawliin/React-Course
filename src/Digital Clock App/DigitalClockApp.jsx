@@ -4,14 +4,37 @@ function DigitalClockApp(){
 
     const [date, setDate] = useState(new Date());
 
-    useEffect(() => {
-        setDate(new Date());
-    })
-    
+    useEffect(()=>{
+        let intervalId = setInterval(() => {
+
+            setDate(new Date());
+
+        }, 1000);
+
+        return () => {
+            clearInterval(intervalId);
+        }
+        
+
+        
+    }, []);
+
+
+    function formatTime(){
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let meridiem = hours >= 12 ? 'PM' : 'AM';
+        
+        hours = hours % 12 || 12;
+
+        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} ${meridiem}`;
+        
+    }
 
     return(
-        <div>
-            <span>{date.getHours()} : {date.getMinutes().toString().padStart(2, '0')} : {date.getSeconds().toString().padStart(2, '0')}</span>
+        <div className='timerApp'>
+            <span>{formatTime()}</span>
             
         </div>
     )

@@ -53,3 +53,21 @@ input[type='color']{
     font-size: 2rem;
     text-align: center;
 }
+
+
+/* Clock App */
+.timerApp{
+    width: 65%;
+    font-size: 4.5rem;
+    margin: 15px auto;
+    background-color: hsla(34, 78%, 91%, 0.774);
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+/*UseContextApp*/
+.box{
+    border: 3px solid;
+    padding: 20px;
+}
