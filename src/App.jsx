@@ -13,6 +13,7 @@ import UseEffectComp from "./UseEffectComp.jsx";
 import DigitalClockApp from "./Digital Clock App/DigitalClockApp.jsx";
 import ComponentA from './UseContextApp/ComponentA';
 import UseRefComp from './UseRefComp.jsx';
+import StopWatchApp from './Stop Watch App/StopWatchApp.jsx';
 
 
 
@@ -65,6 +66,9 @@ function App() {
 
       <hr/><br/>
       <UseRefComp/>
+
+      <hr/><br/>
+      <StopWatchApp/>
     </>
   );
 }
