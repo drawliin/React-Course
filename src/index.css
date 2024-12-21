@@ -123,3 +123,9 @@ input[type='color']{
     background-color: hsl(205, 90%, 55%);
 }
 
+
+/* Ref: Go to paragraph */
+.goToPara section{
+    width: 600px;
+    margin: 70px auto;
+}

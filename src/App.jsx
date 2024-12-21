@@ -14,6 +14,7 @@ import DigitalClockApp from "./Digital Clock App/DigitalClockApp.jsx";
 import ComponentA from './UseContextApp/ComponentA';
 import UseRefComp from './UseRefComp.jsx';
 import StopWatchApp from './Stop Watch App/StopWatchApp.jsx';
+import Ref from './Ref.jsx';
 
 
 
@@ -69,6 +70,10 @@ function App() {
 
       <hr/><br/>
       <StopWatchApp/>
+
+      <hr/><br/>
+      <Ref/>
+
     </>
   );
 }
