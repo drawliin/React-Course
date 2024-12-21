@@ -4,7 +4,6 @@ import Counter from "./Counter.jsx";
 import FormComponent from "./formComponents.jsx";
 import MyComponent2 from "./MyComponent2.jsx"
 import ColorPicker from "./ColorPickerApp.jsx";
-import ControlForm from "./ControlForm.jsx";
 import WeatherApp from "./Weather App/WeatherApp.jsx";
 import Object_in_State from "./Object_in_State.jsx";
 import List_of_Objects from "./List_of_Objects.jsx";
@@ -15,6 +14,7 @@ import ComponentA from './UseContextApp/ComponentA';
 import UseRefComp from './UseRefComp.jsx';
 import StopWatchApp from './Stop Watch App/StopWatchApp.jsx';
 import Ref from './Ref.jsx';
+import Context from './Context/Context.jsx';
 
 
 
@@ -40,9 +40,6 @@ function App() {
 
       <hr/><br/>
       <ColorPicker/>
-
-      <hr/><br/>
-      <ControlForm/>
 
       <hr/><br/>
       <WeatherApp/>
@@ -73,6 +70,10 @@ function App() {
 
       <hr/><br/>
       <Ref/>
+      
+      
+      <hr/><br/>
+      <Context/>
 
     </>
   );
